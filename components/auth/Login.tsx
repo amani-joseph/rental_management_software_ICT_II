@@ -47,16 +47,16 @@ const Login: FunctionComponent<Props> = (props) => {
     return (
         <>
             {/* <div className="space-y-1"></div> */}
-            <p className={"text-center "}>Login with</p>
+            <p className={"text-center "}>Login</p>
             <p className="text-2xl text-center">Welcome Back</p>
             <div className="grid gap-4">
                 <div className="grid  gap-6">
-                    <Button
+                    {/* <Button
                         variant="outline"
                         className={"w-[250px] md:w-[300px] mx-auto"}>
                         <Icons.google className="mr-2 h-4 w-4"/>
                         Google
-                    </Button>
+                    </Button> */}
                 </div>
                 <div className="relative">
                     <div className="relative flex flex-col justify-center text-xs  items-center align-middle">

@@ -51,10 +51,10 @@ const SignUp: FC<Props> = (props) => {
             </CardHeader>
             <CardContent className="grid gap-4">
                 <div className="grid  gap-6">
-                    <Button variant="outline">
+                    {/* <Button variant="outline">
                         <Icons.google className="mr-2 h-4 w-4"/>
                         Google
-                    </Button>
+                    </Button> */}
                 </div>
                 <div className="relative">
                     <div className="absolute inset-0 flex items-center">
