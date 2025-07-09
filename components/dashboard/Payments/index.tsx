@@ -121,7 +121,6 @@ const Payments = () => {
 						</TableCell>
 
 						<TableCell>{payment.amount}</TableCell>
-						<TableCell>{payment.status}</TableCell>
 					</TableRow>
 				))}
 			</TableBody>

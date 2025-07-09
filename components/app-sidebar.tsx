@@ -14,11 +14,12 @@ import {
 	HelpCircleIcon,
 	LayoutDashboardIcon,
 	ListIcon,
+	LogOutIcon,
 	SearchIcon,
 	SettingsIcon,
 	UsersIcon,
 } from "lucide-react";
-import Logo from "@/public/Logo.png";
+import Logo from "@/public/Logo.svg";
 import { usePathname, useRouter } from "next/navigation";
 import { NavDocuments } from "@/components/nav-documents";
 import { NavMain } from "@/components/nav-main";
@@ -33,7 +34,8 @@ import {
 	SidebarMenuButton,
 	SidebarMenuItem,
 } from "@/components/ui/sidebar";
-
+import Image from "next/image";
+import { Button } from "./ui/button";
 const data = {
 	user: {
 		name: "user x",
@@ -163,7 +165,12 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
 							className="data-[slot=sidebar-menu-button]:!p-1.5">
 							<a href="/dashboard/">
 								<span className="text-base font-semibold">
-									RMS.
+									<Image
+										src={Logo}
+										alt={"Logo"}
+										width={200}
+										height={100}
+									/>
 								</span>
 							</a>
 						</SidebarMenuButton>
@@ -176,7 +183,12 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
 				{/* <NavSecondary items={data.navSecondary} className="mt-auto" /> */}
 			</SidebarContent>
 			<SidebarFooter>
-				<NavUser user={data.user} />
+				<Button variant={"default"} className="bg-red-600">
+					{" "}
+					<LogOutIcon />
+					Log out
+				</Button>
+				{/* <NavUser user={data.user} /> */}
 			</SidebarFooter>
 		</Sidebar>
 	);
