@@ -19,7 +19,7 @@ import {
 	UsersIcon,
 } from "lucide-react";
 import Logo from "@/public/Logo.png";
-
+import { usePathname, useRouter } from "next/navigation";
 import { NavDocuments } from "@/components/nav-documents";
 import { NavMain } from "@/components/nav-main";
 import { NavSecondary } from "@/components/nav-secondary";
@@ -43,27 +43,27 @@ const data = {
 	navMain: [
 		{
 			title: "Tenants",
-			url: "#",
+			url: "/dashboard/tenants",
 			icon: LayoutDashboardIcon,
 		},
 		{
 			title: "Properties",
-			url: "#",
+			url: "/dashboard/properties",
 			icon: ListIcon,
 		},
 		{
 			title: "Payment",
-			url: "#",
+			url: "/dashboard/payments",
 			icon: BarChartIcon,
 		},
 		{
 			title: "Communications",
-			url: "#",
+			url: "/dashboard/communications",
 			icon: FolderIcon,
 		},
 		{
 			title: "Maintance",
-			url: "#",
+			url: "/dashboard/maintenance",
 			icon: UsersIcon,
 		},
 	],
@@ -152,6 +152,7 @@ const data = {
 };
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
+	const pathname = usePathname();
 	return (
 		<Sidebar collapsible="offcanvas" {...props}>
 			<SidebarHeader>
@@ -160,14 +161,12 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
 						<SidebarMenuButton
 							asChild
 							className="data-[slot=sidebar-menu-button]:!p-1.5">
-							<a href="#">
-								
+							<a href="/dashboard/">
 								<span className="text-base font-semibold">
 									RMS.
 								</span>
 							</a>
 						</SidebarMenuButton>
-						
 					</SidebarMenuItem>
 				</SidebarMenu>
 			</SidebarHeader>

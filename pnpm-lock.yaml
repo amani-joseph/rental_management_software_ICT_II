@@ -204,8 +204,8 @@ importers:
         specifier: ^1.6.1
         version: 1.6.1
       zod:
-        specifier: ^3.25.64
-        version: 3.25.64
+        specifier: ^3.25.71
+        version: 3.25.71
     devDependencies:
       '@eslint/eslintrc':
         specifier: ^3.3.1
@@ -3737,8 +3737,8 @@ packages:
   yup@1.6.1:
     resolution: {integrity: sha512-JED8pB50qbA4FOkDol0bYF/p60qSEDQqBD0/qeIrUCG1KbPBIQ776fCUNb9ldbPcSTxA69g/47XTo4TqWiuXOA==}
 
-  zod@3.25.64:
-    resolution: {integrity: sha512-hbP9FpSZf7pkS7hRVUrOjhwKJNyampPgtXKc3AN6DsWtoHsg2Sb4SQaS4Tcay380zSwd2VPo9G9180emBACp5g==}
+  zod@3.25.71:
+    resolution: {integrity: sha512-BsBc/NPk7h8WsUWYWYL+BajcJPY8YhjelaWu2NMLuzgraKAz4Lb4/6K11g9jpuDetjMiqhZ6YaexFLOC0Ogi3Q==}
 
   zxcvbn@4.4.2:
     resolution: {integrity: sha512-Bq0B+ixT/DMyG8kgX2xWcI5jUvCwqrMxSFam7m0lAf78nf04hv6lNCsyLYdyYTrCVMqNDY/206K7eExYCeSyUQ==}
@@ -7536,6 +7536,6 @@ snapshots:
       toposort: 2.0.2
       type-fest: 2.19.0
 
-  zod@3.25.64: {}
+  zod@3.25.71: {}
 
   zxcvbn@4.4.2: {}

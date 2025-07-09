@@ -6,7 +6,7 @@ export default function Home() {
 			<main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
 				<div>
 					<Image src="/public/Logo.png" alt="logo" width={200} height={50}/>
-					<div>Test</div>
+					<div>Landing page</div>
 				</div>
 			</main>
 		</div>
