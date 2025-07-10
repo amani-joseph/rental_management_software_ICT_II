@@ -51,6 +51,7 @@
     "eslint-config-next": "13.4.7",
     "framer-motion": "^10.18.0",
     "lodash": "^4.17.21",
+    "lucide": "^0.525.0",
     "lucide-react": "^0.248.0",
     "nanoid": "^4.0.2",
     "next": "13.2.3",

@@ -1,3 +1,4 @@
+"use client";
 import { NavUser } from "@/components/nav-user";
 import { Separator } from "@/components/ui/separator";
 import { SidebarTrigger } from "@/components/ui/sidebar";
@@ -18,6 +19,7 @@ import {
 	SettingsIcon,
 	UsersIcon,
 } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 const data = {
 	user: {
@@ -136,6 +138,10 @@ const data = {
 	],
 };
 export function SiteHeader() {
+	const pathName = usePathname();
+	let pathArray = pathName.split("/");
+	let path = pathArray.slice(-1)[0].toUpperCase();
+	console.log("path::", path);
 	return (
 		<header className="group-has-data-[collapsible=icon]/sidebar-wrapper:h-12 flex h-12 shrink-0 items-center gap-2 border-b transition-[width,height] ease-linear">
 			<div className="flex  w-full items-center gap-1 px-4 lg:gap-2 lg:px-6">
@@ -144,13 +150,14 @@ export function SiteHeader() {
 					orientation="vertical"
 					className="mx-2 data-[orientation=vertical]:h-4"
 				/>
-        <span className="w-full flex justify-between items-center">
-          <h1 className="text-base font-medium">Documents</h1>
-				<span className="w-[300px]">
-					<NavUser user={data.user} />
+				<span className="w-full flex justify-between items-center">
+					<h1 className="text-base font-medium">
+						{path}
+					</h1>
+					<span className="w-[300px]">
+						<NavUser user={data.user} />
+					</span>
 				</span>
-        </span>
-				
 			</div>
 		</header>
 	);

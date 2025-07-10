@@ -18,6 +18,10 @@ import {
 	SearchIcon,
 	SettingsIcon,
 	UsersIcon,
+	Construction,
+	Mail,
+	CreditCard,
+	Users,
 } from "lucide-react";
 import Logo from "@/public/Logo.svg";
 import { usePathname, useRouter } from "next/navigation";
@@ -44,29 +48,34 @@ const data = {
 	},
 	navMain: [
 		{
+			title: "Dashboard",
+			url: "/dashboard/",
+			icon: BarChartIcon,
+		},
+		{
 			title: "Tenants",
 			url: "/dashboard/tenants",
-			icon: LayoutDashboardIcon,
+			icon: Users,
 		},
 		{
 			title: "Properties",
 			url: "/dashboard/properties",
-			icon: ListIcon,
+			icon: LayoutDashboardIcon,
 		},
 		{
 			title: "Payment",
 			url: "/dashboard/payments",
-			icon: BarChartIcon,
+			icon: CreditCard,
 		},
 		{
 			title: "Communications",
 			url: "/dashboard/communications",
-			icon: FolderIcon,
+			icon: Mail,
 		},
 		{
-			title: "Maintance",
+			title: "Maintenance",
 			url: "/dashboard/maintenance",
-			icon: UsersIcon,
+			icon: Construction,
 		},
 	],
 	navClouds: [
