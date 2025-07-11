@@ -48,7 +48,7 @@ const data = {
 	},
 	navMain: [
 		{
-			title: "Dashboard",
+			title: "Analytics",
 			url: "/dashboard/",
 			icon: BarChartIcon,
 		},
@@ -76,88 +76,6 @@ const data = {
 			title: "Maintenance",
 			url: "/dashboard/maintenance",
 			icon: Construction,
-		},
-	],
-	navClouds: [
-		{
-			title: "Capture",
-			icon: CameraIcon,
-			isActive: true,
-			url: "#",
-			items: [
-				{
-					title: "Active Proposals",
-					url: "#",
-				},
-				{
-					title: "Archived",
-					url: "#",
-				},
-			],
-		},
-		{
-			title: "Proposal",
-			icon: FileTextIcon,
-			url: "#",
-			items: [
-				{
-					title: "Active Proposals",
-					url: "#",
-				},
-				{
-					title: "Archived",
-					url: "#",
-				},
-			],
-		},
-		{
-			title: "Prompts",
-			icon: FileCodeIcon,
-			url: "#",
-			items: [
-				{
-					title: "Active Proposals",
-					url: "#",
-				},
-				{
-					title: "Archived",
-					url: "#",
-				},
-			],
-		},
-	],
-	navSecondary: [
-		{
-			title: "Settings",
-			url: "#",
-			icon: SettingsIcon,
-		},
-		{
-			title: "Get Help",
-			url: "#",
-			icon: HelpCircleIcon,
-		},
-		{
-			title: "Search",
-			url: "#",
-			icon: SearchIcon,
-		},
-	],
-	documents: [
-		{
-			name: "Data Library",
-			url: "#",
-			icon: DatabaseIcon,
-		},
-		{
-			name: "Reports",
-			url: "#",
-			icon: ClipboardListIcon,
-		},
-		{
-			name: "Word Assistant",
-			url: "#",
-			icon: FileIcon,
 		},
 	],
 };
