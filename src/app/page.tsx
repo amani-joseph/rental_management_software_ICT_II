@@ -8,12 +8,16 @@ import { ArrowUpRight } from "lucide-react";
 export default function Home() {
 	return (
 		<div>
-			<div className="max-h-screen min-h-screen bg-[url('https://dub.sh/wLUbJ5I')] h-screen bg-cover bg-no-repeat bg-bottom bg-opacity-65  relative">
+			<div className="bg-[url('/hero-image.png')] absolute inset-0 z-0 h-full w-full bg-cover bg-no-repeat bg-bottom bg-opacity-35 bg-blend-saturation blur-sm "></div>
+			{/* <div className="absolute bottom-auto left-auto right-0 top-0 h-full w-full bg-[rgba(30,25,36,0.2)] opacity-90 blur-md z-10"></div> */}
+			{/* <div class="relative h-full w-full bg-white"><div class="absolute h-full w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]"></div></div> */}
+
+			<div className="max-h-screen min-h-screen  h-screen bg-cover bg-no-repeat bg-bottom bg-opacity-65  relative">
 				{/* <div className="w-full h-screen  bg-gray-950 bg-opacity-65 absolute z-[1]"></div> */}
 				<div className=" flex flex-row gap-4 justify-between p-4 ">
 					<Image src={Logo} alt="logo" width={150} height={40} />
 					<div className="flex flex-row gap-4">
-						<div className="flex flex-row ">
+						<div className=" hidden md:flex flex-row">
 							<div className="flex flex-row gap-4">
 								<Link href={"/"}>
 									<Button variant={"link"}>Home</Button>
@@ -26,7 +30,7 @@ export default function Home() {
 								</Link>
 							</div>
 						</div>
-						<div className="flex flex-row gap-4">
+						<div className="hidden md:flex flex-row gap-4">
 							<Link href={"/sign_up"}>
 								<Button variant={"outline"}>Sign Up</Button>
 							</Link>
@@ -40,15 +44,16 @@ export default function Home() {
 						</div>
 					</div>
 				</div>
-				<div className="min-h-screen-[80] flex items-center justify-center px-6">
-					<div className="text-center max-w-2xl  p-4 rounded-md">
+
+				<div className="min-h-screen-[100] flex items-center justify-center px-6 my-auto">
+					<div className="text-center max-w-2xl  p-4 rounded-md mt-20">
 						<Badge className="bg-gradient-to-br via-70% from-primary via-muted/30 to-primary rounded-full py-1 border-none">
 							Under construction
 						</Badge>
 						<h1 className="mt-6 text-4xl sm:text-5xl md:text-6xl md:leading-[1.2] font-bold">
 							Simplicity in Rental Management
 						</h1>
-						<p className="mt-6 text-[17px] md:text-lg">
+						<p className="mt-6 text-[17px] md:text-lg font-medium ">
 							Helping more than 200,000 landlords and real estate
 							ageancies manage properties with ease across
 							Australia
