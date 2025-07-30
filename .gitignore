@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# virtutual env backend
+/rms_api/rms-venv
+/rms_api/.idea

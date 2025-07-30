@@ -7,25 +7,33 @@ class Token(BaseModel):
 
 
 class TokenData(BaseModel):
-    username: str | None = None
+    email: str | None = None
 
 
 class UserCreate(BaseModel):
-    f_name: str
+    firstName: str
     surname: str
-    l_name: str
+    otherName: str
     email: str
-    phone_number: str
+    phone: str
     password: str
-    confirm_password: str
+    confirmPassword: str
+
+
+class UserLogin(BaseModel):
+    email: str
+    password: str
 
 
 class UserResponse(BaseModel):
-    f_name: str
+    firstName: str
     surname: str
-    l_name: str
+    otherName: str
     email: str
-    phone_number: str
+    phone: str
+    # role = str
+    # status = bool
+    # login_attempts = int
 
     class Config():
         orm_mode = True

@@ -36,8 +36,8 @@ def get_user(db: Session, email: str):
     return db_user
 
 
-def authenticate_user(db: Session, username: str, password: str):
-    user = get_user(db, username)
+def authenticate_user(db: Session, email: str, password: str):
+    user = get_user(db, email)
     if not user:
         return False
     if not verify_password(password, user.hashed_password):

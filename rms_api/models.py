@@ -1,5 +1,5 @@
 from database import Base
-from sqlalchemy import Column, Integer, String, ForeignKey,Date
+from sqlalchemy import Column,Boolean, Integer, String, ForeignKey,Date
 from sqlalchemy.orm import relationship
 
 
@@ -7,13 +7,14 @@ class User(Base):
     __tablename__ = 'users'
 
     id = Column(Integer, primary_key=True, index=True)
-    f_name = Column(String)
+    firstName = Column(String)
     surname = Column(String)
-    l_name = Column(String)
+    otherName = Column(String)
     email = Column(String)
-    phone_number = Column(String)
+    phone = Column(String)
     password = Column(String)
-    confirm_password = Column(String)
+    created_at = Column(Date)
+
 
 
 
@@ -22,9 +23,9 @@ class Tenant(Base):
     __tablename__ = 'tenants'
 
     id = Column(Integer, primary_key=True, index=True)
-    f_name = Column(String)
+    firstName = Column(String)
     surname = Column(String)
-    l_name = Column(String)
+    otherName = Column(String)
     email = Column(String)
     phone = Column(String)
     status = Column(String)
@@ -47,7 +48,7 @@ class Propety(Base):
     monthly_rent = Column(Integer)
     bathrooms = Column(Integer)
     bedrooms = Column(Integer)
-    parkings = Column(Integer)
+    parking = Column(Integer)
 
 
 class Payments(Base):

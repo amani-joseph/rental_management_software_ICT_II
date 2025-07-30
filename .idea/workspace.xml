@@ -5,14 +5,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8143afe8-6536-4cb6-917c-dbbd13403a1c" name="Changes" comment="squash! fixed bugs">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLinters/eslint.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/about/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/contact/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/dashboard/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/dashboard/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/auth/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/auth/Login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/auth/Sign-up.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/auth/Sign-up.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rms_api/auth/auth_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/rms_api/auth/auth_handler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rms_api/rms-venv/lib/python3.12/site-packages/fastapi-0.116.1.dist-info/METADATA" beforeDir="false" afterPath="$PROJECT_DIR$/rms_api/rms-venv/lib/python3.12/site-packages/fastapi-0.116.1.dist-info/METADATA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rms_api/rms-venv/lib/python3.12/site-packages/fastapi/openapi/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/rms_api/rms-venv/lib/python3.12/site-packages/fastapi/openapi/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rms_api/routers/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/rms_api/routers/auth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rms_api/schemas.py" beforeDir="false" afterPath="$PROJECT_DIR$/rms_api/schemas.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(auth)/sign_up/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(auth)/sign-up/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript JSX File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
@@ -62,20 +87,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/mac/Developer/rental_management_system/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "ts.external.directory.path": "/Users/mac/Developer/rental_management_system/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -84,6 +113,12 @@
         <entry key="com.intellij.reactbuddy.storybook" value="false" />
       </map>
     </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/contact" />
+      <recent name="$PROJECT_DIR$/src/app/about" />
+    </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -108,6 +143,11 @@
       <workItem from="1752656241092" duration="3963000" />
       <workItem from="1752803735359" duration="1479000" />
       <workItem from="1752814347601" duration="949000" />
+      <workItem from="1753790657184" duration="1205000" />
+      <workItem from="1753791877899" duration="741000" />
+      <workItem from="1753792649171" duration="1953000" />
+      <workItem from="1753827600465" duration="87000" />
+      <workItem from="1753827695332" duration="5381000" />
     </task>
     <servers />
   </component>
