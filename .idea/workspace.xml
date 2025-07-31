@@ -5,27 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8143afe8-6536-4cb6-917c-dbbd13403a1c" name="Changes" comment="squash! fixed bugs">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLinters/eslint.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/about/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/contact/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/auth/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/auth/Login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/auth/Sign-up.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/auth/Sign-up.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/dashboard/Properties/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/dashboard/Properties/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rms_api/auth/auth_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/rms_api/auth/auth_handler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rms_api/rms-venv/lib/python3.12/site-packages/fastapi-0.116.1.dist-info/METADATA" beforeDir="false" afterPath="$PROJECT_DIR$/rms_api/rms-venv/lib/python3.12/site-packages/fastapi-0.116.1.dist-info/METADATA" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rms_api/rms-venv/lib/python3.12/site-packages/fastapi/openapi/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/rms_api/rms-venv/lib/python3.12/site-packages/fastapi/openapi/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rms_api/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/rms_api/database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rms_api/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/rms_api/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rms_api/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/rms_api/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rms_api/rms.db" beforeDir="false" afterPath="$PROJECT_DIR$/rms_api/rms.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rms_api/routers/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/rms_api/routers/auth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rms_api/schemas.py" beforeDir="false" afterPath="$PROJECT_DIR$/rms_api/schemas.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(auth)/sign_up/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(auth)/sign-up/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rms_api/routers/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/rms_api/routers/user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/dashboard/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/dashboard/layout.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +89,7 @@
     "node.js.selected.package.standard": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "ts.external.directory.path": "/Users/mac/Developer/rental_management_system/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -148,6 +137,7 @@
       <workItem from="1753792649171" duration="1953000" />
       <workItem from="1753827600465" duration="87000" />
       <workItem from="1753827695332" duration="5381000" />
+      <workItem from="1753957673625" duration="546000" />
     </task>
     <servers />
   </component>

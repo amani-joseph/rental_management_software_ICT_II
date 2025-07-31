@@ -14,6 +14,7 @@ class User(Base):
     phone = Column(String)
     password = Column(String)
     created_at = Column(Date)
+    is_active = Column(Boolean, default=True)
 
 
 

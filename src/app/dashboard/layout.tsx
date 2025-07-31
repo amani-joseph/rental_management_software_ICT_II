@@ -12,22 +12,22 @@ import { SiteHeader } from "@/components/site-header";
 import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar";
 
 export const metadata = {
-	title: "RMS",
-	description: "rms app",
+  title: "RMS",
+  description: "rms app",
 };
 
 export default function DashboardLayout({
-	children,
+  children,
 }: {
-	children: React.ReactNode;
+  children: React.ReactNode;
 }) {
-	return (
-		<SidebarProvider>
-			<AppSidebar variant="inset" />
-			<SidebarInset>
-				<SiteHeader />
-				<div className="flex flex-col p-4 ">{children}</div>
-			</SidebarInset>
-		</SidebarProvider>
-	);
+  return (
+    <SidebarProvider>
+      <AppSidebar variant="inset" />
+      <SidebarInset>
+        <SiteHeader />
+        <div className="flex flex-col p-4 lg:m-4">{children}</div>
+      </SidebarInset>
+    </SidebarProvider>
+  );
 }

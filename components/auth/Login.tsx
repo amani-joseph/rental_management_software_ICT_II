@@ -12,6 +12,7 @@ import { AppRouterInstance } from "next/dist/shared/lib/app-router-context";
 import Link from "next/link";
 import { Icons } from "@/components/icons";
 import { CustomInput } from "@/atoms/forms/CustomInput";
+import axios from "axios";
 
 // import { useForm, SubmitHandler } from "react-hook-form"
 interface OwnProps {}
@@ -22,6 +23,9 @@ const defaultValues: Partial<SignInFormValues> = {
   // name: "Your name",
   // email: "Email",
 };
+const baseURL = process.env.NEXT_PUBLIC_BASE_API;
+const SECRET = process.env.NEXT_SECRET;
+
 const Login: FunctionComponent<Props> = (props) => {
   const router: AppRouterInstance = useRouter();
   const [visible, setVisible] = useState<boolean>(false);
@@ -32,12 +36,25 @@ const Login: FunctionComponent<Props> = (props) => {
   });
 
   function onSubmit(data: SignInFormValues) {
-    console.log(data);
-    toast.custom((t) => (
-      <pre className="mt-2 w-[440px] rounded-md bg-slate-700 p-4">
-        <code className="text-white">{JSON.stringify(data, null, 2)}</code>
-      </pre>
-    ));
+    console.log("URL::", `${baseURL}/auth/login`);
+    const stringifyData = JSON.stringify(data);
+    console.log("###stringifyData###:  ", stringifyData);
+    axios
+      .post(`${baseURL}/auth/login`, data, {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
+      .then((res) => {
+        console.log(res.data.message);
+        localStorage.setItem("token", res.data.access_token);
+        toast.success("Welcome");
+      })
+      .catch((err) => {
+        console.error(err);
+        localStorage.removeItem("token");
+        toast.error(err.response.data.detail);
+      });
     router.push("/dashboard");
   }
 
