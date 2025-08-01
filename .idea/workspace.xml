@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8143afe8-6536-4cb6-917c-dbbd13403a1c" name="Changes" comment="squash! fixed bugs">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/auth/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/auth/Login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/auth/Sign-up.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/auth/Sign-up.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rms_api/rms.db" beforeDir="false" afterPath="$PROJECT_DIR$/rms_api/rms.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(auth)/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(auth)/layout.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +133,7 @@
       <workItem from="1753827600465" duration="87000" />
       <workItem from="1753827695332" duration="5381000" />
       <workItem from="1753957673625" duration="546000" />
-      <workItem from="1753958227349" duration="17548000" />
+      <workItem from="1753958227349" duration="18229000" />
     </task>
     <servers />
   </component>
