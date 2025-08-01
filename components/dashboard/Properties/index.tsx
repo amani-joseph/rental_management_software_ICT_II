@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { format } from "date-fns";
 import {
@@ -11,6 +12,15 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import {Button} from "@/ui/button";
+import {DialogAtom} from "@/atoms/Modal";
+import {Form} from "@/ui/form";
+import {useForm} from "react-hook-form";
+import {zodResolver} from "@hookform/resolvers/zod";
+import {propertySchema} from "@/lib/validations/property";
+import axios from "axios";
+import toast from "react-hot-toast";
+import * as z from "zod";
+import {CustomInput} from "@/atoms/forms/CustomInput";
 const properties = [
   {
     id: 1,
@@ -293,12 +303,164 @@ const properties = [
     action: "View",
   },
 ];
+type PropertyFormValues = z.infer<typeof propertySchema>;
+const baseURL = process.env.NEXT_PUBLIC_BASE_API;
+
+const defaultValues: Partial<PropertyFormValues> = {
+  // name: "Your name",
+  // email: "Email",
+  tenant:"Vacant"
+};
+
 
 const Properties = () => {
+  const form = useForm<PropertyFormValues>({
+    resolver: zodResolver(propertySchema),
+    defaultValues,
+  });
+
+  function onSubmit(data: PropertyFormValues) {
+    console.log("URL::", `${baseURL}/auth/register`);
+
+    console.log("###data###", data);
+    // axios
+    //     .post(`${baseURL}/auth/register`, data)
+    //     .then((res) => {
+    //       console.log(res.data);
+    //     })
+    //     .catch((err) => {
+    //       console.log(err.response.data.detail);
+    //       toast.error(err.response.data.detail);
+    //     });
+  }
   return (
     <>
       <div className="flex flex-row">
-        <Button variant={"secondary"}>Add Property</Button>
+        <DialogAtom dialogName={"Add Property"}
+                    title={"Add Property"}
+                    description={"Add Property details below"}
+        >
+          <Form {...form}>
+            <form
+                onSubmit={form.handleSubmit(onSubmit)}
+                className=" mx-auto mb-0 mt-8 w-full space-y-4"
+            >
+              <div className={"flex flex-row gap-3 justify-between"}>
+                <div className={"flex flex-col w-[50%]"}>
+                  <CustomInput
+                      form={form}
+                      type="text"
+                      label={"Street"}
+                      placeholder={"Street"}
+                      name={"street"}
+                  />
+                  <CustomInput
+                      form={form}
+                      type="text"
+                      label={"Street Number"}
+                      placeholder={"Street Number"}
+                      name={"streetNumber"}
+                  />
+                  <CustomInput
+                      form={form}
+                      type="text"
+                      label={"City"}
+                      placeholder={"City"}
+                      name={"city"}
+                  />
+                  <CustomInput
+                      form={form}
+                      type="text"
+                      label={"State"}
+                      placeholder={"State"}
+                      name={"state"}
+                  />
+                  <CustomInput
+                      form={form}
+                      type="text"
+                      label={"Zip"}
+                      placeholder={"Zip"}
+                      name={"zip"}
+                  />
+                  <CustomInput
+                      form={form}
+                      type="text"
+                      label={"Type"}
+                      placeholder={"apartment /  Bungalow  / townhouse"}
+                      name={"type"}
+                  />
+                  <CustomInput
+                      form={form}
+                      type="text"
+                      label={"Occupancy"}
+                      placeholder={"rented / vacant"}
+                      name={"occupancy"}
+                  />
+                </div>
+                <div className={"flex flex-col w-[50%]"}>
+
+                  <CustomInput
+                      form={form}
+                      type="text"
+                      label={"Tenant"}
+                      placeholder={"Tenant Name"}
+                      name={"tenant"}
+                  />
+                  <CustomInput
+                      form={form}
+                      type="date"
+                      label={"lease Start"}
+                      placeholder={"lease Start"}
+                      name={"leaseStart"}
+                  />
+                  <CustomInput
+                      form={form}
+                      type="date"
+                      label={"lease End"}
+                      placeholder={"lease End"}
+                      name={"leaseEnd"}
+                  />
+                  <CustomInput
+                      form={form}
+                      type="number"
+                      label={"Rent"}
+                      placeholder={"Rent"}
+                      name={"rent"}
+                  />
+                  <CustomInput
+                      form={form}
+                      type="number"
+                      label={"Bathrooms"}
+                      placeholder={"Bathrooms"}
+                      name={"bathrooms"}
+                  />
+                  <CustomInput
+                      form={form}
+                      type="number"
+                      label={"Bedrooms"}
+                      placeholder={"Bedrooms"}
+                      name={"bedrooms"}
+                  />
+                  <CustomInput
+                      form={form}
+                      type="text"
+                      label={"Parking"}
+                      placeholder={"Parking"}
+                      name={"parking"}
+                  />
+                </div>
+
+              </div>
+              <Button variant={"default"} type="submit">
+                Add Property
+              </Button>
+
+
+
+              
+            </form>
+          </Form>
+        </DialogAtom>
       </div>
       <Table className="">
         <TableHeader>

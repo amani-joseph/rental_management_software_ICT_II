@@ -5,16 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8143afe8-6536-4cb6-917c-dbbd13403a1c" name="Changes" comment="squash! fixed bugs">
-      <change beforePath="$PROJECT_DIR$/components/auth/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/auth/Login.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atoms/Modal/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/validations/property.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/validations/tenant.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLinters/eslint.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/dashboard/Properties/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/dashboard/Properties/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rms_api/auth/auth_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/rms_api/auth/auth_handler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rms_api/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/rms_api/database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rms_api/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/rms_api/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rms_api/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/rms_api/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rms_api/rms.db" beforeDir="false" afterPath="$PROJECT_DIR$/rms_api/rms.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rms_api/routers/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/rms_api/routers/auth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rms_api/routers/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/rms_api/routers/user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/dashboard/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/dashboard/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ui/dialog.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ui/dialog.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +81,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/mac/Developer/rental_management_system/lib/validations",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -89,7 +89,7 @@
     "node.js.selected.package.standard": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.grazie",
     "ts.external.directory.path": "/Users/mac/Developer/rental_management_system/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -104,6 +104,9 @@
     </option>
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/validations" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/app/contact" />
       <recent name="$PROJECT_DIR$/src/app/about" />
@@ -138,6 +141,7 @@
       <workItem from="1753827600465" duration="87000" />
       <workItem from="1753827695332" duration="5381000" />
       <workItem from="1753957673625" duration="546000" />
+      <workItem from="1753958227349" duration="14928000" />
     </task>
     <servers />
   </component>
