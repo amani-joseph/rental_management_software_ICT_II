@@ -14,6 +14,8 @@ import * as z from "zod";
 import Link from "next/link";
 import axios from "axios";
 import { log } from "console";
+import {AppRouterInstance} from "next/dist/shared/lib/app-router-context";
+import {useRouter} from "next/navigation";
 
 interface OwnProps {}
 
@@ -26,6 +28,7 @@ const defaultValues: Partial<SignUpFormValues> = {
 
 const baseURL = process.env.NEXT_PUBLIC_BASE_API;
 const SignUp: FC<Props> = (props) => {
+  const router: AppRouterInstance = useRouter();
   const form = useForm<SignUpFormValues>({
     resolver: zodResolver(signUpSchema),
     defaultValues,
@@ -38,7 +41,11 @@ const SignUp: FC<Props> = (props) => {
     axios
       .post(`${baseURL}/auth/register`, data)
       .then((res) => {
-        console.log(res.data);
+        console.log(res);
+        if(res.status === 201){
+          toast.success("Account created successfully");
+          router.push("/login");
+        }
       })
       .catch((err) => {
         console.log(err.response.data.detail);

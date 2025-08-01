@@ -49,13 +49,14 @@ const Login: FunctionComponent<Props> = (props) => {
         console.log(res.data.message);
         localStorage.setItem("token", res.data.access_token);
         toast.success("Welcome");
+        router.push("/dashboard");
       })
       .catch((err) => {
         console.error(err);
         localStorage.removeItem("token");
         toast.error(err.response.data.detail);
       });
-    router.push("/dashboard");
+
   }
 
   return (
