@@ -31,6 +31,7 @@ class UserResponse(BaseModel):
     otherName: str
     email: str
     phone: str
+
     # role = str
     # status = bool
     # login_attempts = int
@@ -41,3 +42,37 @@ class UserResponse(BaseModel):
 
 class UserInDB(UserResponse):
     hashed_password: str
+
+
+class PropertyCreate(BaseModel):
+    street: int
+    streetNumber: int
+    city: str
+    state: str
+    zip: int
+    type: str
+    occupancy: bool
+    tenant: str
+    leaseStart: str
+    leaseEnd: str
+    rent: int
+    bathrooms: int
+    bedrooms: int
+    parking: int
+
+
+class TenantCreate(BaseModel):
+    firstName: str
+    surname: str
+    otherName: str
+    email: str
+    phone: str
+    street: int
+    streetNumber: int
+    city: str
+    state: str
+    zip: int
+    rentStatus: bool
+    rent: int
+    leaseStart: str
+    leaseEnd: str

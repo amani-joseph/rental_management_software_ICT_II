@@ -14,7 +14,7 @@ from schemas import UserCreate, UserResponse, UserLogin
 router = APIRouter()
 
 
-@router.post("/register",
+@router.post("/create_property",
              response_model=UserResponse, status_code=status.HTTP_201_CREATED,tags=["auth"])
 def register_user(user: UserCreate,
                   db: Session = Depends(get_db)):

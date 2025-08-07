@@ -56,7 +56,6 @@ const Login: FunctionComponent<Props> = (props) => {
         localStorage.removeItem("token");
         toast.error(err.response.data.detail);
       });
-
   }
 
   return (
